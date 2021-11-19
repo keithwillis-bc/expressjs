@@ -1,16 +1,9 @@
 [
   {
-    "name": "McDonalds",
+    "name": "McDonald's",
     "address": "127 Main Street",
     "cuisine": "Fast Food",
     "website": "http://www.mcdonalds.com",
-    "description": "It is fast and cheap"
-  },
-  {
-    "name": "Test",
-    "address": "123 forward str",
-    "cuisine": "Junk",
-    "website": "http://www.junkfood.com",
-    "description": "get a sugar buzz"
+    "description": "fast and cheap"
   }
 ]
