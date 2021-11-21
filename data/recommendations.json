@@ -1,9 +1,1 @@
-[
-  {
-    "name": "McDonald's",
-    "address": "127 Main Street",
-    "cuisine": "Fast Food",
-    "website": "http://www.mcdonalds.com",
-    "description": "fast and cheap"
-  }
-]
+[{"id":"r1","name":"McDonald's","address":"127 Main Street","cuisine":"Fast Food","website":"http://www.mcdonalds.com","description":"fast and cheap"},{"id":"4863417e-26ea-44d2-90eb-7140f19b3bbf","name":"Tiny Tim's","address":"4566 county road 617","cuisine":"Bar","website":"http://www.tinytimsbarandgrill.com","description":"It is a nice quiet hole in the wall establishment where you can get your drink on."},{"id":"0dfed288-b387-41fc-9f66-7e846747f949","name":"after split file","address":"test","cuisine":"yummy","website":"http://www.popcorn.com","description":"it is the best "}]
