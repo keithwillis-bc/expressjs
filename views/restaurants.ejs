@@ -11,6 +11,10 @@
       <% if(restaurants.length > 0) { %>
       <p>Find your next favorite restaurants with help of our other users!</p>
       <p>We found <%= restaurants.length %> restaurants.</p>
+      <form action="/restaurants" method="GET">
+        <input type="hidden" value="<%= order %>" name="order" />
+        <button id="change-order" class="btn">Change Order</button>
+      </form>
       <ul id="restaurants-list">
         <% for(let restaurant of restaurants){ %> <%-
         include("includes/restaurants/restaurant", {restaurant}) %> <% } %>

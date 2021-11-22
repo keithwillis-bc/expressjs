@@ -6,8 +6,22 @@ const uuid = require("uuid");
 const router = express.Router();
 
 router.get("/restaurants", (req, res) => {
-  const restaurants = restData.getStoredRestaurants();
-  res.render("restaurants", { restaurants });
+  let multiplier = 1;
+  let order = req.query.order;
+  if (order === "DESC") {
+    multiplier = -1;
+    order = "ASC";
+  } else {
+    order = "DESC";
+  }
+  console.log(order);
+
+  const restaurants = restData.getStoredRestaurants().sort((item1, item2) => {
+    if (item1.name.toUpperCase() > item2.name.toUpperCase())
+      return 1 * multiplier;
+    else return -1 * multiplier;
+  });
+  res.render("restaurants", { restaurants, order });
 });
 
 router.get("/restaurants/:id", (req, res) => {
